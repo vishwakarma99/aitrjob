@@ -1,0 +1,1706 @@
+{
+	"info": {
+		"_postman_id": "94f270b8-781e-4238-b76f-baf686705fb0",
+		"name": "airtrjobs_backend2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "social media",
+			"item": [
+				{
+					"name": "Social Media details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Komal",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "admin",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "preeat@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "komal@12345",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password_confirmation",
+									"value": "komal@12345",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/social/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"social",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Social Media",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "facebook_url",
+									"value": "fb.com",
+									"type": "text"
+								},
+								{
+									"key": "instagram_url",
+									"value": "insta.com",
+									"type": "text"
+								},
+								{
+									"key": "twitter_url",
+									"value": "twiter.com",
+									"type": "text"
+								},
+								{
+									"key": "linkedin_url",
+									"value": "linked.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/social",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"social"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Social Media",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"facebook_url\":\"facebook.com\",\r\n    \"instagram_url\":\"instagram.com\",\r\n    \"twitter_url\":\"twiter.com\",\r\n    \"linkedin_url\":\"linkedin.com\"\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/social/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"social",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Gel all  Social Media",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "service_image",
+									"type": "file",
+									"src": "/C:/Users/Roshani/Downloads/60cca866dc990960862fc316eb218130.pdf"
+								},
+								{
+									"key": "service_price",
+									"value": "12000",
+									"type": "text"
+								},
+								{
+									"key": "service_name",
+									"value": "Service1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/social",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"social"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  Social Media",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "service_image",
+									"type": "file",
+									"src": "/C:/Users/Roshani/Downloads/60cca866dc990960862fc316eb218130.pdf"
+								},
+								{
+									"key": "service_price",
+									"value": "12000",
+									"type": "text"
+								},
+								{
+									"key": "service_name",
+									"value": "Service1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/social/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"social",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Get Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"grant_type\":\"password\",\r\n    \"client_id\":\"2\",\r\n    \"client_secret\":\"tLzXFvYWmzhx0KMYEgPDog3Y0aTDlt6tGMCltYzq\",\r\n    \"username\":\"roshanisitlani05@gmail.com\",\r\n    \"password\":\"roshani@123\"\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/oauth/token",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Get users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/user",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register new users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "role",
+									"value": "Admin",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "roshani",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "roshanisitlani05@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "roshani@123",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "roshani@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/register",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"roshanisitlani05@gmail.com\",\r\n    \"password\":\"roshani@123\"\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/login",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "role",
+									"value": "user",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "roshani",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "roshanisitlani05@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "roshani@123",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "roshani@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://kleanbasket.com/inindia/public/api/deleteUser",
+							"protocol": "https",
+							"host": [
+								"kleanbasket",
+								"com"
+							],
+							"path": [
+								"inindia",
+								"public",
+								"api",
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forget Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"roshanisitlani05@gmail.com\",\r\n    \"password\":\"roshani05\",\r\n    \"password_confirmation\":\"roshani05\"\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/resetPassword/9",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resetPassword",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"roshanisitlani05@gmail.com\",\r\n    \"password\":\"roshani05\",\r\n    \"password_confirmation\":\"roshani05\"\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/resetPassword/9",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resetPassword",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User side",
+			"item": [
+				{
+					"name": "Personal details",
+					"item": [
+						{
+							"name": "Add Personal details",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "full_name",
+											"value": "Roshani Sitlani",
+											"type": "text"
+										},
+										{
+											"key": "phone_no",
+											"value": "9921154321",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "roshanisitlani05@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "profile_img",
+											"type": "file",
+											"src": "/C:/Users/Roshani/Downloads/60cca866dc990960862fc316eb218130.pdf"
+										},
+										{
+											"key": "dob",
+											"value": "05/08/95",
+											"type": "text"
+										},
+										{
+											"key": "skills",
+											"value": "html",
+											"type": "text"
+										},
+										{
+											"key": "about_me",
+											"value": "web developer",
+											"type": "text"
+										},
+										{
+											"key": "desired_location",
+											"value": "pune",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/addpersonaldetails",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"addpersonaldetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Personal details",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "full_name",
+											"value": "Roshani Sitlani",
+											"type": "text"
+										},
+										{
+											"key": "phone_no",
+											"value": "9921154321",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "roshanisitlani05@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "dob",
+											"value": "05/08/94",
+											"type": "text"
+										},
+										{
+											"key": "skills",
+											"value": "css",
+											"type": "text"
+										},
+										{
+											"key": "about_me",
+											"value": "jghjhg",
+											"type": "text"
+										},
+										{
+											"key": "desired_location",
+											"value": "web",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/updatepersonaldetails",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"updatepersonaldetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Personal details",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/getpersonaldetails/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getpersonaldetails",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Education details",
+					"item": [
+						{
+							"name": "Add Eductional details",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"qualification\":\"aaa\",\r\n\t\"passout_yr\":\"aaaa\",\r\n\t\"university\":\"sdaaa\",\r\n\t\"marks\":\"dsfaaa\",\r\n\t\"qualification_2\":\"adsfaa\",\r\n\t\"passout_yr_2\":\"aadsfa\",\r\n\t\"university_2\":\"dfaaa\",\r\n\t\"marks_2\":\"aaadsf\",\r\n\t\"qualification\":\"sdfaaa\"\r\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/addeducatonaldetails",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"addeducatonaldetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Personal details",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"qualification\":\"1aaa\",\r\n\t\"passout_yr\":\"2aaaa\",\r\n\t\"university\":\"sdaaa\",\r\n\t\"marks\":\"dsfaaa\",\r\n\t\"qualification_2\":\"adsfaa\",\r\n\t\"passout_yr_2\":\"aadsfa\",\r\n\t\"university_2\":\"dfaaa\",\r\n\t\"marks_2\":\"aaadsf\"\r\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/updateeducationaldetails/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"updateeducationaldetails",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Personal details",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/geteducationaldetails/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"geteducationaldetails",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Work",
+					"item": [
+						{
+							"name": "Add Personal details",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "full_name",
+											"value": "Roshani Sitlani",
+											"type": "text"
+										},
+										{
+											"key": "phone_no",
+											"value": "9921154321",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "roshanisitlani05@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "profile_img",
+											"type": "file",
+											"src": "/C:/Users/Roshani/Downloads/60cca866dc990960862fc316eb218130.pdf"
+										},
+										{
+											"key": "dob",
+											"value": "05/08/95",
+											"type": "text"
+										},
+										{
+											"key": "skills",
+											"value": "html",
+											"type": "text"
+										},
+										{
+											"key": "about_me",
+											"value": "web developer",
+											"type": "text"
+										},
+										{
+											"key": "desired_location",
+											"value": "pune",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/addpersonaldetails",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"addpersonaldetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Personal details",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "full_name",
+											"value": "Roshani Sitlani",
+											"type": "text"
+										},
+										{
+											"key": "contact_number",
+											"value": "9921154321",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "roshanisitlani05@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "profile_img",
+											"type": "file",
+											"src": "/C:/Users/Roshani/Downloads/60cca866dc990960862fc316eb218130.pdf"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/personaldetails",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"personaldetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Personal details",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/personaldetails/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"personaldetails",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "resume",
+					"item": [
+						{
+							"name": "Add resume details",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "link_of_resume",
+											"value": "Roshani Sitlani",
+											"type": "text"
+										},
+										{
+											"key": "upload_resume",
+											"type": "file",
+											"src": "/C:/Users/Roshani/Downloads/image (6).png"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/addresumedetails",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"addresumedetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updtae resume details",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "link_of_resume",
+											"value": "Roshani Sitlani",
+											"type": "text"
+										},
+										{
+											"key": "upload_resume",
+											"type": "file",
+											"src": "/C:/Users/Roshani/Downloads/Screenshot_126.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/updateresumedetails/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"updateresumedetails",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get resume details",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/getresumedetails/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getresumedetails",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "video",
+					"item": [
+						{
+							"name": "Add video",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "link_of_video",
+											"value": "Roshani Sitlani",
+											"type": "text"
+										},
+										{
+											"key": "upload_video",
+											"type": "file",
+											"src": "/C:/Users/Roshani/Downloads/CRUD in Laravel with Firestore Database.mp4"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/addvideodetails",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"addvideodetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updtae video",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "link_of_video",
+											"value": "Roshani ",
+											"type": "text"
+										},
+										{
+											"key": "upload_video",
+											"type": "file",
+											"src": [],
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/updatevideodetails/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"updatevideodetails",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get video",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/getvideodetails/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getvideodetails",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cerificates",
+					"item": [
+						{
+							"name": "Add certificate",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "certificate1",
+											"type": "file",
+											"src": "/C:/Users/Roshani/Downloads/Screenshot_125.png"
+										},
+										{
+											"key": "certificate2",
+											"type": "file",
+											"src": "/C:/Users/Roshani/Downloads/image (6).png"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/addcertificate",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"addcertificate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updtae certiicate",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "certificate1",
+											"type": "file",
+											"src": "/C:/Users/Roshani/Downloads/1539443261154.jpg"
+										},
+										{
+											"key": "certificate2",
+											"type": "file",
+											"src": "/C:/Users/Roshani/Downloads/Screenshot_126.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/updateaddcertificatedetails/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"updateaddcertificatedetails",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get certificate",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{auth}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/personaldetails/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"personaldetails",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
